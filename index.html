@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css"></link>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.1/css/all.min.css">
+    <script src='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.js'></script>
+    <link href='https://api.mapbox.com/mapbox-gl-js/v2.0.0/mapbox-gl.css' rel='stylesheet'/>
+    <link rel="stylesheet" href="https://use.typekit.net/rcu6vau.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com"> 
+    <link href="https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap" rel="stylesheet"> 
+    <title>Le Rouennais Chocolaté</title>
+</head>
+<body>
+    <header class="heading-page">
+        <a href="index.html">
+            <img id="logo"src="logoVEC.svg" alt="Le rouennais chocolaté">
+        </a>
+    </header>
+    <main class="main_content">
+        <section class="section1">
+            <h1>Alors... Envie de chocolat ?</h1>
+            <p>Bievenue à Rouen, une ville iconique de Normandie connue pour ces icones historiques tels que Jeane d'Arc ou
+                Thomas Pesquet, mais pas que. Ses intérets pour la culture, l'art ou la gastronomie en font d'elle une ville à
+                absolument visiter un de ces quatres. En parlant de gastronomie, saviez-vous qu'un grand nombre de français en passe beaucoup
+                pour le chocolat. Que ce soit pour la cuisine, la dégustation ou même le commerce, cet aliment est une véritable pépite d'or 
+                pour nos estomacs. Si vous etes-ici, c'est que vous en envie, non ? 
+            </p>
+        </section>
+        <section class="section2"></section>
+        <section class="section3">
+            <h2>À vos chocolatier !</h2>
+            <p>La ville regorge de chocolatier de talent que vous pourrez visiter afin d'y savourer les meilleurs chocolats, du centre-ville ainsi que
+                les alentours. Du célèbre Jeff de Bruges en passant par Leonidas, vous avez le choix.<br> À vos chocolatier ! 
+            </p>
+            <div id='map'></div>
+            <script>
+                mapboxgl.accessToken = 'pk.eyJ1IjoiZW1vdWFuZ2EiLCJhIjoiY2tmM3JuM2xnMDV5NzJ5cDlwNTVpY2RvcyJ9.CdsloAMYXgii_SigF-jvNw';
+                var map = new mapboxgl.Map ({
+                    container: 'map',
+                    style: 'mapbox://styles/emouanga/ckh0hvdya2i441arzqvb2xylq/draft', // stylesheet location
+                    center: [1.090, 49.440], // starting position [lng, lat]
+                    zoom: 13 // starting zoom
+                    });    
+            </script>
+            <div id="txt_mag">
+                <p>Pour ceux qui le désirent, voici quelques sites à aller regarder. Les infos y sont ajoutés</p>
+            </div>
+            <div class="button-mag">
+                <button class="jeffdebruges" type="button">Jeff de Bruges</button>
+                <button class="latelierduchocolat" type="button">L'atelier du chocolat</button>
+                <button class="leonidas" type="button">Leonidas</button>
+            </div>   
+        </section>
+    </main>
+    <footer class="footer-page">
+            <p>© Copyright - Le Rouennais Chocolaté - Tout droits réservés</p>
+    </footer>
+</body>
+</html>

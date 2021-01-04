@@ -1,0 +1,210 @@
+/**
+* EDITER L'ENSEMBLE DU DOCUMENT
+*/
+html {
+    scroll-behavior: smooth;
+    font-family: 'termina', sans-serif;
+}
+
+h1, h2 {
+    color: #F6CE6A;
+    text-align: center;
+}
+
+p {
+    color: white;
+}
+
+/**
+* EDITER LE BODY
+*/
+body {
+    background-color:#40262A;
+    margin: auto;
+}
+
+/**
+* EDITER LE HEADER
+*/
+.heading-page {
+    display: block;
+    width: 100%;
+    background-color: #5AE7F2;
+ }
+ 
+#logo {
+    display: block;
+    margin-right: auto;
+    margin-left: auto;
+    height: 70px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
+/**
+* EDITER LA SECTION 1
+*/
+.section1 {
+    display: block;
+    width: 100%;
+    top: 0px;
+    padding-top: 35px;
+    padding-bottom: 35px;
+}
+
+.section1 p {
+    padding-bottom: 20px;
+    margin-left: 220px;
+    margin-right: 220px;
+}
+
+/**
+* EDITER LA SECTION 2
+*/
+.section2 {
+    display: block;
+    background-image:url(pexels-pixabay-65882.jpg);
+    background-attachment: fixed;
+    padding: 200px;
+}
+
+/**
+* EDITER LA SECTION 3
+*/
+.section3 {
+        background-color: whitesmoke;
+        display: block;
+        width: 100%;
+        top: 0px;
+        padding-top: 35px;
+        padding-bottom: 35px;
+    }
+    
+    .section3 p {
+        color: black;
+        padding-bottom: 20px;
+        margin-left: 220px;
+        margin-right: 220px;
+    }
+
+    #map {
+        width: 900px;
+        height: 500px;
+        margin: auto;
+    }
+
+    #txt_mag {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    #txt_mag p {
+        text-align: center;
+    }
+    
+    .button-mag {
+        display: flex;
+        padding-bottom: 30px ;
+    }
+    
+    .jeffdebruges, .latelierduchocolat, .leonidas {
+        padding: 20px 30px; 
+        background: #40262A; 
+        color: white; 
+        display: block;
+        margin: auto;
+        border: none;
+        border-radius: 30px;
+        font-family: 'termina', sans-serif;
+        }
+    
+        .jeffdebruges:hover {
+            background-color: #F6CE6A;
+            opacity: 1;
+	       -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+            opacity: .5; 
+        }
+        .latelierduchocolat:hover {
+            background-color: #F6CE6A;
+            opacity: 1;
+	        -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+            opacity: .5; 
+        }
+        .leonidas:hover {
+            background-color: #F6CE6A;
+            opacity: 1;
+	       -webkit-transition: .3s ease-in-out;
+            transition: .3s ease-in-out;
+            opacity: .5; 
+        }
+
+/**
+* EDITER LE FOOTER
+*/  
+
+.footer-page {
+    background-color: #5AE7F2;
+    margin: auto;
+    width: 100%;
+}
+
+.footer-page p {
+    font-weight: bold;
+     width: 100%;
+     color: black;
+     text-align: center;
+     padding-top: 50px;
+     padding-bottom: 50px;
+     margin-top: 0;
+     margin-bottom: 0;
+}
+
+/**
+* RESPONSIVE TAB x MOBILE
+*/  
+@media only screen and (max-width: 768px) /***Tab device*/ {
+
+    #logo {
+        height: 40px;
+    }
+
+    h1 {
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .section1 p {
+        padding-bottom: 20px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    .section3 p {
+        padding-bottom: 50px;
+        margin-left: 50px;
+        margin-right: 50px;
+    }
+
+    #map {
+        width: auto;
+        height: 600px;
+        margin: auto;
+    }
+}
+
+@media only screen and (max-width: 480px) {
+    #map {
+        width: auto;
+        height: 500px;
+        margin: auto;
+    }
+
+    .jeffdebruges, .latelierduchocolat, .leonidas {
+        padding: 20px 5px; 
+    }
+
+}
+
+    
